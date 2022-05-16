@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,65 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+:root {
+  --black-2: rgba(0, 0, 0, 0.729);
+  --black: rgba(0, 0, 0, 1);
+  --eden: rgba(14, 99, 79, 1);
+  --pacific-blue: rgba(21, 164, 195, 1);
+  --eerie-black: rgba(29, 31, 34, 1);
+  --shark: rgba(41, 41, 41, 1);
+  --shark-2: rgba(42, 42, 42, 1);
+  --emerald: rgba(94, 206, 123, 1);
+  --manatee: rgba(141, 143, 154, 1);
+  --mercury: rgba(229, 229, 229, 1);
+  --zest: rgba(223, 128, 32, 1);
+  --white-2: rgba(255, 255, 255, 0.2);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-xs: 14px;
+  --font-size-s: 16px;
+  --font-size-m: 18px;
+  --font-size-l: 24px;
+  --font-size-xl: 30px;
+  --font-size-xxl: 42px;
+  --font-size-xxxl: 12xpx;
+
+  --font-family-raleway: "Raleway";
+  --font-family-roboto: "Roboto";
+  --font-family-roboto-condensed-bold: "Roboto Condensed-Bold";
+  --font-family-source-sans-pro: "Source Sans Pro";
+}
+
+@import url('https://googleapis.com/css?family=Roboto:400,700,500|Raleway:400,700,300,500,600|Source+Sans+Pro:400');
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
